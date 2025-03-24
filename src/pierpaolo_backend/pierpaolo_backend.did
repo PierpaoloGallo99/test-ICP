@@ -1,0 +1,4 @@
+service : {
+    "aggiungi_numero": (int64) -> (int64);
+    "ottieni_somma_totale": () -> (int64) query;
+}

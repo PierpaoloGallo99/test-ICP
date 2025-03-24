@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "pierpaolo_backend": {
+      "candid": "src/pierpaolo_backend/pierpaolo_backend.did",
+      "package": "pierpaolo_backend",
+      "type": "rust"
+    },
+    "pierpaolo_frontend": {
+      "dependencies": [
+        "pierpaolo_backend"
+      ],
+      "source": [
+        "src/pierpaolo_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "pierpaolo_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
